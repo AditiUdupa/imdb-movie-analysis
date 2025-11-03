@@ -1,0 +1,58 @@
+# .gitignore for R/Data Analysis Project
+
+# R files
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Data files (don't push large datasets)
+data/raw/*
+data/processed/*.rds
+data/processed/*.csv
+data/database/*.db
+
+# Keep folder structure but ignore contents
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/database/.gitkeep
+
+# Output files
+*.html
+*.pdf
+reports/*.html
+reports/*.pdf
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+temp/
+cache/
+
+# API keys and secrets
+.env
+secrets.R
+config.yml
+
+# IDE specific
+.vscode/
+.idea/
+
+# Windows
+desktop.ini
+
+# Large files
+*.zip
+*.gz
+*.tar
+*.rar
+
+# Except sample/documentation files
+!docs/*.pdf
+!dashboards/screenshots/*.png
